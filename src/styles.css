@@ -1,1 +1,182 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* colors */
+  --clr-dark: hsl(230, 35%, 7%);
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-light: hsl(231, 77%, 90%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-medium-white: hsla(0, 0%, 100%, 0.5021);
+  --clr-medium-light-white: hsla(0, 0%, 100%, 0.25);
+  --clr-light-white: hsla(0, 0%, 100%, 0.1036);
+  --clr-white-blur: hsla(0, 0%, 100%, 0.04);
+
+  /* font-family */
+  --ff-serif: Bellefair, serif;
+  --ff-sans-condensed: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: Barlow, sans-serif;
+
+  /* font-size */
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-56: 3.5rem;
+  --fs-100: 6.25rem;
+  --fs-150: 9.375rem;
+
+  /* letter-spacing */
+  --letter-sp-xxs: 0.7px;
+  --letter-sp-xs: 2px;
+  --letter-sp-s: 2.35px;
+  --letter-sp-m: 2.7px;
+  --letter-sp-l: 4.725px;
+  --letter-sp-xl: 4.75px;
+
+  /* img url */
+  --home-desktop-url: url('assets/home/background-home-desktop.jpg');
+  --home-tablet-url: url('assets/home/background-home-tablet.jpg');
+  --destination-desktop-url: url('assets/destination/background-destination-desktop.jpg');
+  --destination-tablet-url: url('assets/destination/background-destination-tablet.jpg');
+
+  /* media queries */
+  --media-desktop: 1440px;
+  --media-tablet: 768px;
+  --media-mobile: 375px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  position: relative;
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-16);
+  color: var(--clr-white);
+  line-height: 1.5;
+  min-width: 375px;
+  max-width: 1440px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  /* background-color: var(--clr-dark); */
+  background-color: pink;
+  scrollbar-width: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture,
+ul {
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-150);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-100);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--fs-56);
+}
+
+h4 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-32);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: var(--ff-sans-condensed);
+  font-size: var(--fs-28);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-sp-xl);
+}
+
+.subheading-1 {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-28);
+  text-transform: uppercase;
+  color: var(--clr-white);
+}
+
+.subheading-2 {
+  font-family: var(--ff-sans-condensed);
+  font-size: var(--fs-14);
+  letter-spacing: var(--letter-sp-s);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+image,
+picture {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  font-size: var(--fs-18);
+  line-height: 2rem;
+  color: var(--clr-light);
+}
+
+span {
+  font-weight: 700;
+}

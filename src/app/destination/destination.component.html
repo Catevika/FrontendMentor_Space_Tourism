@@ -1,0 +1,28 @@
+@if(destination){
+<div class="destination-content">
+  <div class="left-side">
+    <picture>
+      <source type="image/webp" media="(max-width: 768px)" srcset={{destination.images.webp}} class="planet-img">
+      <source type="image/png" media="(max-width: 1440px)" srcset={{destination.images.png}} class="planet-img">
+      <img src={{destination.images.png}} alt="{{destination.name}} planet" class="planet-img">
+    </picture>
+  </div>
+  <div class="right-side">
+    <div class="right-side-top">
+      <h2>{{destination.name}}</h2>
+
+      <p>{{destination.description}}</p>
+    </div>
+    <div class="right-side-bottom">
+      <div class="distance">
+        <p class="subheading-2">Avg. distance</p>
+        <p class="subheading-1">{{destination.distance}}</p>
+      </div>
+      <div class="time">
+        <p class="subheading-2">Est. travel time</p>
+        <p class="subheading-1">{{destination.travel}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+}

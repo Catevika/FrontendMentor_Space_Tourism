@@ -5,7 +5,7 @@
   "projects": {
     "FrontendMentor_Space_Tourism": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": { },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -27,7 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ ]
           },
           "configurations": {
             "production": {
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "FrontendMentor_Space_Tourism:build:production"
+              "buildTarget": "FrontendMentor_Space_Tourism:build:production"
             },
             "development": {
-              "browserTarget": "FrontendMentor_Space_Tourism:build:development"
+              "buildTarget": "FrontendMentor_Space_Tourism:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "FrontendMentor_Space_Tourism:build"
+            "buildTarget": "FrontendMentor_Space_Tourism:build"
           }
         },
         "test": {
@@ -89,7 +89,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [ ]
           }
         }
       }

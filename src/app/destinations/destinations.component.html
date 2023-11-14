@@ -1,0 +1,19 @@
+<section class="section-container">
+  <div class="section-content">
+    <div class="h5-destination-title">
+      <h5><span>01</span> Pick your destination</h5>
+    </div>
+    <div class="destination-container">
+      <div class="destination-navigation">
+        <ul class="nav-items">
+          @for(destination of destinations; track destination) {<li class="nav-item">
+            <a class="nav-link" [routerLink]="['./', destination.id]" routerLinkActive="active" ariaCurrentWhenActive="page">
+              {{destination.name}}
+            </a>
+          </li>}
+        </ul>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</section>
