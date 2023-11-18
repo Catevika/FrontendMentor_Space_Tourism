@@ -1,6 +1,7 @@
 :root {
   /* colors */
   --clr-dark: hsl(230, 35%, 7%);
+  --clr-medium-dark: hsl(231, 15%, 26%);
   --clr-gray: hsl(0, 0%, 59%);
   --clr-light: hsl(231, 77%, 90%);
   --clr-white: hsl(0, 0%, 100%);
@@ -8,6 +9,8 @@
   --clr-medium-light-white: hsla(0, 0%, 100%, 0.25);
   --clr-light-white: hsla(0, 0%, 100%, 0.1036);
   --clr-white-blur: hsla(0, 0%, 100%, 0.04);
+  --clr-white-blur-mobile: hsla(0, 0%, 100%, 0.3);
+
 
   /* font-family */
   --ff-serif: Bellefair, serif;
@@ -16,11 +19,14 @@
 
   /* font-size */
   --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
   --fs-16: 1rem;
   --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
   --fs-28: 1.75rem;
   --fs-32: 2rem;
   --fs-56: 3.5rem;
+  --fs-80: 5rem;
   --fs-100: 6.25rem;
   --fs-150: 9.375rem;
 
@@ -29,8 +35,9 @@
   --letter-sp-xs: 2px;
   --letter-sp-s: 2.35px;
   --letter-sp-m: 2.7px;
-  --letter-sp-l: 4.725px;
-  --letter-sp-xl: 4.75px;
+  --letter-sp-l: 3.375px;
+  --letter-sp-xl: 4.725px;
+  --letter-sp-xxl: 4.75px;
 
   /* img url */
   --home-desktop-url: url('assets/home/background-home-desktop.jpg');
@@ -102,6 +109,7 @@ h1 {
   font-family: var(--ff-serif);
   font-size: var(--fs-150);
   text-transform: uppercase;
+  line-height: 1;
 }
 
 h2 {
@@ -124,7 +132,7 @@ h5 {
   font-family: var(--ff-sans-condensed);
   font-size: var(--fs-28);
   text-transform: uppercase;
-  letter-spacing: var(--letter-sp-xl);
+  letter-spacing: var(--letter-sp-xxl);
 }
 
 .subheading-1 {
@@ -159,7 +167,8 @@ li {
 image,
 picture {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  aspect-ratio: 1 / 1;
   vertical-align: middle;
   font-style: italic;
 }
@@ -179,4 +188,42 @@ p {
 
 span {
   font-weight: 700;
+}
+
+@media (max-width: 1004px) {
+  h1 {
+    line-height: 9.375rem;
+  }
+
+  h2 {
+    font-size: var(--fs-80);
+  }
+
+  h5 {
+    font-size: var(--fs-20);
+    letter-spacing: var(--letter-sp-l);
+  }
+
+  p {
+    font-size: var(--fs-16);
+    line-height: 1.75rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 569px) {
+  h1 {
+    font-size: var(--fs-80);
+    line-height: 6.25rem;
+  }
+
+  h5 {
+    font-size: var(--fs-16);
+    letter-spacing: var(--letter-sp-m);
+  }
+
+  p {
+    font-size: var(--fs-15);
+    line-height: 1.5625rem;
+  }
 }

@@ -1,5 +1,10 @@
 <nav class="primary-navigation">
-  <ul class="nav-items">
+  <button class="hamburger-icons" (click)="toggleMenu()">
+    @if (isMenuOpen === true) {<img src="../../assets/shared/icon-close.svg" alt="Hamburger menu open icon"
+      class="hamburger-icon">}
+    @else {<img src="../../assets/shared/icon-hamburger.svg" alt="Hamburger menu close icon" class="close-icon">}
+  </button>
+  <ul class="nav-items" [class.is-open]="isMenuOpen">
     <li class="nav-item">
       <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"
         [routerLinkActiveOptions]="{exact: true}">

@@ -66,3 +66,24 @@
   padding: 0.95rem 0 0.8rem;
   border-bottom: 3px solid var(--clr-white);
 }
+
+@media (max-width: 1200px) {
+  .section-content {
+    margin: 13.25rem 3rem 5rem 6.4rem;
+  }
+}
+
+@media (max-width: 1125px) {
+  .section-content {
+    margin: 13.25rem 2.5rem 5rem 2.5rem;
+  }
+}
+
+@media (max-width: 1004px) {
+  .destination-navigation {
+    align-self: center;
+    position: absolute;
+    top: 35.8rem;
+    margin: 3.3rem auto 0;
+  }
+}
