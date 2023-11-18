@@ -87,3 +87,13 @@
     margin: 3.3rem auto 0;
   }
 }
+
+@media (max-width: 569px) {
+  .section-content {
+    margin: 5.5rem 2.5rem 5rem 2.5rem;
+  }
+
+  .destination-navigation {
+    top: 20.9rem;
+  }
+}
