@@ -12,10 +12,6 @@
   margin: 13.25rem 7rem 5rem 10.4rem;
 }
 
-.h5-destination-title {
-  letter-spacing: var(--letter-sp-m);
-}
-
 .h5-destination-title span {
   color: var(--clr-medium-light-white);
   margin-right: 1.75rem;
@@ -80,6 +76,10 @@
 }
 
 @media (max-width: 1004px) {
+  .section-container {
+    background-image: var(--destination-tablet-url);
+  }
+
   .destination-navigation {
     align-self: center;
     position: absolute;
@@ -89,6 +89,10 @@
 }
 
 @media (max-width: 569px) {
+  .section-container {
+    background-image: var(--destination-mobile-url);
+  }
+
   .section-content {
     margin: 5.5rem 2.5rem 5rem 2.5rem;
   }

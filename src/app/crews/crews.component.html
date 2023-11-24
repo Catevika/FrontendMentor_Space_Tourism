@@ -1,0 +1,17 @@
+<section class="section-container">
+  <div class="section-content">
+    <div class="h5-destination-title">
+      <h5 class="h5-crew-title"><span>02</span> Meet your crew</h5>
+    </div>
+    <router-outlet></router-outlet>
+    <div class="crew-container">
+      <div class="crew-navigation">
+        <ul class="nav-items">
+          @for(crew of crews; track crew) {<li class="nav-item">
+            <a class="dot-slider-link" [routerLink]="['./', crew.id]" routerLinkActive="active" ariaCurrentWhenActive="page"></a>
+          </li>}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

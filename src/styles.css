@@ -5,7 +5,7 @@
   --clr-gray: hsl(0, 0%, 59%);
   --clr-light: hsl(231, 77%, 90%);
   --clr-white: hsl(0, 0%, 100%);
-  --clr-medium-white: hsla(0, 0%, 100%, 0.5021);
+  --clr-medium-white: hsla(0, 0%, 100%, 0.5);
   --clr-medium-light-white: hsla(0, 0%, 100%, 0.25);
   --clr-light-white: hsla(0, 0%, 100%, 0.1036);
   --clr-white-blur: hsla(0, 0%, 100%, 0.04);
@@ -44,6 +44,10 @@
   --home-tablet-url: url('assets/home/background-home-tablet.jpg');
   --destination-desktop-url: url('assets/destination/background-destination-desktop.jpg');
   --destination-tablet-url: url('assets/destination/background-destination-tablet.jpg');
+  --destination-mobile-url: url('assets/destination/background-destination-mobile.jpg');
+  --crew-desktop-url: url('assets/crew/background-crew-desktop.jpg');
+  --crew-tablet-url: url('assets/crew/background-crew-tablet.jpg');
+  --crew-mobile-url: url('assets/crew/background-crew-mobile.jpg');
 
   /* media queries */
   --media-desktop: 1440px;
@@ -105,17 +109,28 @@ ul {
   margin: 0;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+.subheading-1 {
   font-family: var(--ff-serif);
-  font-size: var(--fs-150);
   text-transform: uppercase;
+}
+
+h5,
+.subheading-2 {
+  font-family: var(--ff-sans-condensed);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: var(--fs-150);
   line-height: 1;
 }
 
 h2 {
-  font-family: var(--ff-serif);
   font-size: var(--fs-100);
-  text-transform: uppercase;
 }
 
 h3 {
@@ -123,30 +138,23 @@ h3 {
 }
 
 h4 {
-  font-family: var(--ff-serif);
   font-size: var(--fs-32);
-  text-transform: uppercase;
+  color: var(--clr-medium-white);
 }
 
 h5 {
-  font-family: var(--ff-sans-condensed);
   font-size: var(--fs-28);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-sp-xxl);
+  letter-spacing: var(--letter-sp-xl);
 }
 
 .subheading-1 {
-  font-family: var(--ff-serif);
   font-size: var(--fs-28);
-  text-transform: uppercase;
   color: var(--clr-white);
 }
 
 .subheading-2 {
-  font-family: var(--ff-sans-condensed);
   font-size: var(--fs-14);
   letter-spacing: var(--letter-sp-s);
-  text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
 

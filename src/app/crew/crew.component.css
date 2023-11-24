@@ -1,0 +1,81 @@
+.crew-content {
+  position: relative;
+  display: flex;
+}
+
+.left-side-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side-top h3 {
+  order: 2;
+  margin-bottom: 1.6875rem;
+}
+
+.left-side-top h4 {
+  order: 1;
+  margin-bottom: -0.5625rem;
+}
+
+.left-side-top p {
+  max-width: 445px;
+  order: 3;
+}
+
+.crew-img-1,
+.crew-img-2,
+.crew-img-3,
+.crew-img-4 {
+  position: absolute;
+  bottom: -12rem;
+}
+
+.crew-img-1 {
+  right: 2.5rem;
+}
+
+.crew-img-2 {
+  right: 9.5rem;
+}
+
+.crew-img-3 {
+  bottom: -10rem;
+  right: 3.5rem;
+}
+
+.crew-img-4 {
+  right: 3.5rem;
+}
+
+@media (max-width: 1125px) {
+  .crew-content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1004px) {
+  .crew-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.75rem;
+    gap: 7.45rem;
+  }
+
+  .commander-img {
+    display: flex;
+    width: 67.4%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 569px) {
+  .commander-content {
+    margin-top: 2rem;
+    gap: 7.63rem;
+  }
+
+  .commander-img {
+    width: 57.6%;
+  }
+}

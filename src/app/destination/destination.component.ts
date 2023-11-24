@@ -1,13 +1,13 @@
 import type { Destination } from 'src/types/Types';
 import { Component } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-destination',
   standalone: true,
-  imports: [ CommonModule, NgOptimizedImage ],
+  imports: [ CommonModule ],
   templateUrl: './destination.component.html',
   styleUrl: './destination.component.css'
 })

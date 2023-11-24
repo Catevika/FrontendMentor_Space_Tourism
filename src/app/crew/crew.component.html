@@ -1,0 +1,18 @@
+@if(crew){
+<div class="crew-content">
+  <div class="left-side">
+    <div class="left-side-top">
+      <h3>{{crew.name}}</h3>
+      <h4>{{crew.role}}</h4>
+      <p>{{crew.bio}}</p>
+    </div>
+  </div>
+  <div class="right-side">
+    <picture>
+      <source type="image/webp" media="(max-width: 768px)" srcset={{crew.images.webp}} class="commander-img">
+      <source type="image/png" media="(max-width: 1440px)" srcset={{crew.images.png}} class="commander-img">
+      <img src={{crew.images.png}} alt="{{crew.name}}" class="crew-img-{{crew.id}}">
+    </picture>
+  </div>
+</div>
+}
